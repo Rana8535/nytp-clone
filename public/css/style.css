@@ -1,0 +1,791 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: 10px auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* navigation bar */
+
+.navbar {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    margin-left: 170px;
+    text-align: center;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar #logo {
+    padding-bottom: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+    /* width: 80%; */
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* margin-left: 2%; */
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 10px 10px;
+
+}
+
+.navbar ul li:hover a {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+
+}
+
+.apply {
+    background-color: orangered;
+    color: white;
+    padding-top: 7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 97px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(112, 105, 105);
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+/* homepage */
+.scroll {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container .box1 {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    color: rgb(141, 134, 134);
+    margin: 20px;
+    font-size: 20px;
+}
+
+.break {
+    width: 70%;
+    margin: 50px auto;
+    height: 1px;
+    background-color: red;
+}
+
+.box2 {
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 .card {
+    width: 200px;
+    height: 400px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 3px;
+}
+
+.box2 .card img {
+    width: 200px;
+    height: 100px;
+    margin: 5px 5px;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+.box3 .box31 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+}
+
+.box3 img {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px;
+}
+
+.box31 .card {
+    display: block;
+    width: 250px;
+    height: 350px;
+    margin: 3px 5px;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.box4 {
+    display: block;
+}
+
+.box4 h1 {
+    display: block;
+    margin: 40px;
+}
+
+.box4 p {
+    display: block;
+    /* border: 2px solid red; */
+    width: 90%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.box5 {
+    width: 100%;
+    text-align: center;
+}
+
+.box5 span::before {
+    margin-top: 30px;
+    font-size: 3rem;
+    content: " ";
+    animation: animate infinite 10s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+    0% {
+        content: "Finanace & Banking";
+    }
+
+    20% {
+        content: "Healthcare";
+    }
+
+    40% {
+        content: "Engineering And Manufacturing";
+    }
+
+    60% {
+        content: "Retail & Technology";
+    }
+
+    80% {
+        content: "Others";
+    }
+}
+
+.box6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22 15 15);
+    color: white;
+}
+
+.box6 .box61 {
+    width: 68%;
+    color: white;
+}
+
+.box6 .box62 {
+    width: 28%;
+    color: white;
+}
+
+#scroll-container {
+    border-radius: 5px;
+    height: 350px;
+    overflow: hidden;
+}
+#scroll-text li{
+    margin: 15px auto;
+}
+
+#scroll-text {
+    height: 100%;
+    text-align: center;
+
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 5s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateY(100%);
+    }
+
+    to {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+
+    to {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+
+    to {
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+.box7 {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(22 15 15);
+    color: white;
+}
+
+.box7 div {
+    width: 200px;
+    height: 100%;
+    color: white;
+    /* border: 2px solid yellow; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    padding-left: 2px 5px;
+    overflow: hidden;
+
+}
+
+.box7 div h2 {
+    margin: 37px 5px;
+    /* border: 2px solid white; */
+    text-align: center;
+}
+.box7 img{
+    margin-left: -45px;
+}
+
+.box7  button {
+    text-align: center;
+    margin: 46% 21%;
+    border: 2px solid red;
+    width: 132px;
+    height: 40px;
+    color: red;
+    background-color: rgb(22 15 15);
+}
+.box7 a{
+    list-style: none;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+}
+.box7 a:hover{
+    color: rgb(255, 253, 253);
+    font-size: 0.9rem;
+}
+.box7 button:hover{
+    color: rgb(246, 243, 243);
+    font-size: 0.9rem;
+
+}
+
+footer {
+    background-color: rgb(22 15 15);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+footer .foot {
+    font-size: 60px;
+}
+
+footer p {
+    color: white;
+}
+
+/* aboutpage */
+
+.ab{
+    margin-top: 150px ;
+    /* border: 2px solid black; */
+}
+.abox1{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin: 10px auto;
+}
+.abox1 ul{
+    margin: 5px 20px;
+}
+.abox1 h3{
+    margin: 5px 20px;
+}
+.abox1 div{
+    margin: 5px 50px;
+}
+
+.abox2{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+    justify-content: center;
+    align-items: center;
+}
+.abox2 .card img{
+    width: 300px;
+    height: 200px;
+}
+.abox2 .card{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    text-align: center;
+    margin: 2% 1%;
+    width: 300px;
+    height: 450px;
+}
+.abox3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abox3 h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.abox3 .box31{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.abox3 .boxtxt{
+    display: block;
+    width: 45%;
+    height: 100%;
+    /* border: 2px solid green; */
+    text-align: center;
+}
+.abox3 .boximg{
+    display: block;
+    width: 45%;
+    height: 100%;
+    /* border: 2px solid rgb(244, 22, 22); */
+}
+
+.abox3 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* staffing page */
+.sbox1{
+    margin-top: 150px;
+    color: white;
+    width: 100%;
+    height: 300px;
+    background: url('img/staffing1img.jpeg ');
+}
+.sbox1 h1{
+    padding: 62px 3px 4px 5px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.sbox2,.sbox3{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    overflow: hidden;
+}
+.sbox2 .sbox22{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin: 69px 0px 101px -208px;
+}
+.sbox2 {
+    animation: slide 10s linear infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translate(-120%);
+    }
+    100%{
+        transform: translate(120%);
+    }
+  }
+.sbox2 .sbox23{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.sbox2 img{
+    width: 50rem;
+    height: 90%;
+}
+.sbox3 img{
+    width: 50rem;
+    height: 90%;
+    z-index: -50;
+}
+.sbox3 .sbox31{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    margin-right: -200px;
+    width: 500px;
+    height: 400px;
+    z-index: 100;
+}
+.sbox3{
+    animation: anime 10s linear infinite;
+}
+@keyframes anime {
+    0%{
+        transform: translate(120%);
+    }
+    100%{
+        transform: translate(-120%);
+    }
+  }
+
+.sbox4{
+    display: flex;
+}
+.sbox4 .scard{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.sbox4 img{
+    width: 265px;
+    height: 300px;
+}
+
+/* services page  */
+.serbox1 h1{
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-left: 150px;
+}
+.serbox1 div{
+    color: white;
+    margin: 10px -113px;
+    width: 110%;
+    height: 300px;
+    background: url(img/serimg1.jpeg) no-repeat;
+    background-position: -160px -100px;
+    background-size: 1700px 500px;
+}
+.serbox2{
+    display: flex;   
+}
+.serbox2 img{
+    width: 150%;
+    height: 450px;
+}
+.serbox2 .serbox21{
+    width: 50%;
+    height: 100%;   
+}
+.serbox2 .txt{
+    background-color: black;
+    color: white;
+    margin-top: 150px;
+}
+
+/* career  page */
+.carbox1{
+    /* border: 2px solid red; */
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.carbox1 p{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: 10px auto;
+}
+.car{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    animation:  animate 10s infinite;
+}
+.car h1{
+    background-color: rgb(94, 84, 84);
+    color: black;
+    display: inline;
+}
+
+.car>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: animate 5s infinite;
+    opacity: 0;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.car>div:nth-child(2){
+    animation-delay: 2.5s;
+}
+@keyframes animate {
+    30%{
+        opacity: 1;
+    }
+    50%{
+       opacity: 1;
+    }
+}
+.carbox2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.carbox2 .carx21,.carbox2 .dropdown{
+    /* border: 2px solid black; */
+    align-items: center;
+    margin: 10px 8px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.carbox2 input{
+    border: 2px solid rgb(80, 78, 78);
+    width: 245px;
+    height: 59px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.carbox2 button i{
+    /* border: 2px solid red; */
+    width: 50px;
+    height: 30px;
+    font-size: 50px;
+}
+.carbox2 .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .carbox2 .dropdown .dropbtn {
+    font-size: 50px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .carbox2 .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .carbox2 .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    margin-top: 140px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .carbox2 .dropdown-content a {
+    float: none;
+    color: black;
+    margin-top: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .carbox2 .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .carbox2 .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .nbox1{
+    color: white;
+    margin-top: 100px;
+    width: 1616px;
+    height: 300px;
+    background: url(img/n1.jpeg) no-repeat;
+    background-position: -99px -102px;
+    background-size: 1700px 400px;
+  }
+  .nbox1 h2,.nbox1 ul{
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .nbox2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .nbox2 .nbox21{
+    /* border: 2px solid black; */
+    margin-right: 3px;
+  }
+  .nbox2 .nbox21 .nbox211{
+    height: 700px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* border: 2px solid rgb(255, 8, 8); */
+    margin-right: 3px;
+    margin-top: 5px;
+  }
+  .nbox2 img{
+    width: 560px;
+    height: 400px;
+  }
+
+  .apbox1{
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myform{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.myinput{
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+.btn{
+    margin: 5px;
+    padding: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: brown;
+    font-weight: bold;
+    width: 8%;
+    border-radius: 5px;
+}
+.btn:hover{
+    font-size: 21px;
+    background-color: rgb(211, 106, 106);
+}
+
+
+  
+  
