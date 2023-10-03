@@ -1,0 +1,19 @@
+{
+  "name": "nytp-website-clone",
+  "version": "1.0.0",
+  "description": "This website is made for practice only",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ankur",
+    "Rana"
+  ],
+  "author": "Ankur Rana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
